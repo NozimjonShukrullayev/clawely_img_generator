@@ -5,21 +5,18 @@ function Testimonials() {
 		<div className='my-24 container'>
 			<div className='text-center py-12'>
 				<h1 className='text-3xl md:text-4xl font-bold'>
-					A community of over
-					<span className='text-gradient'> 4 million </span>
-					is waiting for you
+					Sizni
+					<span className='text-gradient'> 4 milliondan ortiq </span>
+					jamoa kutmoqda
 				</h1>
 				<p className='mt-4 text-gray-400'>
-					Clawely's power extends beyond our revolutionary tools — we are
-					anchored in one of the largest and most supportive AI communities
-					worldwide, and we're deeply committed to it.
+					Clawelyning kuchi bizning inqilobiy vositalarimizdan tashqarida - biz dunyodagi eng katta va eng qo'llab-quvvatlovchi sun'iy intellekt hamjamiyatlaridan birida joylashganmiz va biz bunga qattiq sodiqmiz..
 				</p>
 			</div>
 			<div className='flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-4 md:px-0'>
 				<div className='text-center max-w-xs'>
 					<p className='italic'>
-						"Clawely gave me a way of expressing myself in a completely new and
-						different way. Without AI I was only a consumer. Now I can create."
+						"Clawely menga o'zimni butunlay yangi va boshqacha tarzda ifodalash usulini berdi. AIsiz men faqat iste'molchi edim. Endi men yaratishim mumkin."
 					</p>
 					<div className='flex items-center justify-center mt-4'>
 						<img
@@ -34,9 +31,7 @@ function Testimonials() {
 				</div>
 				<div className='text-center max-w-xs'>
 					<p className='italic'>
-						"Leo is suitable for those who are just starting their way in the
-						world of AI images, as well as for professionals, who are offered a
-						wide range of tools to work with."
+						"Claw AI tasvirlari olamida endigina yo'l boshlayotganlar uchun, shuningdek, ular bilan ishlash uchun keng ko'lamli vositalar taklif etiladigan professionallar uchun javob beradi."
 					</p>
 					<div className='flex items-center justify-center mt-4'>
 						<img
@@ -51,8 +46,7 @@ function Testimonials() {
 				</div>
 				<div className='text-center max-w-xs'>
 					<p className='italic'>
-						"With its powerful fine-tuned models Clawely makes AI art a breeze.
-						The community is also the best I've found to date!"
+						"Clawely o'zining kuchli nozik sozlangan modellari bilan sun'iy intellekt san'atini shabada qiladi. Hamjamiyat ham men hozirgacha topgan eng yaxshisidir!"
 					</p>
 					<div className='flex items-center justify-center mt-4'>
 						<img
