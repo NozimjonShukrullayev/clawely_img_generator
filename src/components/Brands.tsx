@@ -30,7 +30,7 @@ const brands = [
 
 const Brands = () => {
 	return (
-		<div className='overflow-hidden whitespace-nowrap'>
+		<div className='overflow-hidden whitespace-nowrap my-24'>
 			<div className='flex animate-scroll gap-5'>
 				{brands.map(brand => (
 					<div key={brand.id} className='flex-shrink-0'>
