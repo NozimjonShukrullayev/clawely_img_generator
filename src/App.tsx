@@ -8,6 +8,7 @@ import Auth from './pages/Auth'
 import AuthCallback from './pages/AuthCallback'
 import Index from './pages/index'
 import NotFound from './pages/NotFound'
+import VerifyEmail from './pages/VerifyEmail'
 
 const queryClient = new QueryClient()
 
@@ -22,6 +23,7 @@ const App = () => (
 						<Route path='/' element={<Index />} />
 						<Route path='/auth' element={<Auth />} />
 						<Route path='/auth/callback' element={<AuthCallback />} />
+						<Route path='/verify' element={<VerifyEmail />} />
 						<Route path='*' element={<NotFound />} />
 					</Routes>
 				</BrowserRouter>
