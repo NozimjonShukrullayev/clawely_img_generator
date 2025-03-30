@@ -48,7 +48,7 @@ export default function Navbar() {
 						to='/'
 						className='font-medium hover:text-accent transition-colors'
 					>
-						Home
+						Bosh sahifa
 					</Link>
 					<div className='flex items-center gap-2'>
 						<ThemeToggle />
@@ -97,7 +97,7 @@ export default function Navbar() {
 								className='text-xl font-medium hover:text-accent transition-colors'
 								onClick={() => setIsMenuOpen(false)}
 							>
-								Home
+								Bosh sahifa
 							</Link>
 							{user ? (
 								<LogoutDialog />
