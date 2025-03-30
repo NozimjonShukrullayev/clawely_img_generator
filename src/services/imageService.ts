@@ -7,7 +7,7 @@ export interface GeneratedImage {
 
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
-const apiKey = import.meta.env.GEMINI_API_KEY
+const apiKey = import.meta.env.VITE_GEMINI_VITE_API_KEY
 const genAI = new GoogleGenerativeAI(apiKey)
 
 const model = genAI.getGenerativeModel({
