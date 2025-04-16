@@ -108,7 +108,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 			if (error) throw error
 			toast({
 				title: "Ro'yxatdan o'tdingiz",
-				description: 'Elektron pochta manzilingizni tekshiring.',
+				description: 'Muvaffaqqiyatli tarzda roʻyxatdan oʻtdingiz.',
 			})
 		} catch (error: any) {
 			toast({
