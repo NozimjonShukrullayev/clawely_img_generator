@@ -9,7 +9,6 @@ type AuthContextType = {
 	isLoading: boolean
 	signIn: (email: string, password: string) => Promise<void>
 	signUp: (email: string, password: string) => Promise<void>
-	signInWithGoogle: () => Promise<void>
 	signOut: () => Promise<void>
 }
 
@@ -22,7 +21,6 @@ const storeSessionInLocalStorage = (session: Session | null) => {
 			'supabase.auth.token',
 			JSON.stringify({
 				access_token: session.access_token,
-				refresh_token: session.refresh_token,
 			})
 		)
 	} else {
@@ -124,32 +122,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 		}
 	}
 
-	const signInWithGoogle = async () => {
-		try {
-			setIsLoading(true)
-			const { error, data } = await supabase.auth.signInWithOAuth({
-				provider: 'google',
-				options: {
-					redirectTo: `${window.location.origin}/auth/callback`,
-				},
-			})
-
-			if (error) throw error
-			if (data) {
-				console.log('Google Auth Response:', data)
-			}
-		} catch (error: any) {
-			toast({
-				title: 'Xatolik yuz berdi',
-				description: error.message,
-				variant: 'destructive',
-			})
-			throw error
-		} finally {
-			setIsLoading(false)
-		}
-	}
-
 	const signOut = async () => {
 		try {
 			setIsLoading(true)
@@ -181,7 +153,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 				isLoading,
 				signIn,
 				signUp,
-				signInWithGoogle,
 				signOut,
 			}}
 		>
